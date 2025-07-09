@@ -1,0 +1,45 @@
+/* Cart.css */
+
+/* Styles for the main grid container */
+.cart-grid-container {
+  padding: 16px; /* Equivalent to sx={{ p: 2 }} (2 * 8px = 16px) */
+}
+
+/* Styles for individual product cards */
+.cart-product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures cards take full height of grid item */
+}
+
+/* Styles for the image within the card */
+.cart-product-card .MuiCardMedia-root {
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* Scales image down to fit without cropping */
+  padding-top: 16px; /* Equivalent to sx={{ pt: 2 }} */
+}
+
+/* Styles for the content area within the card */
+.cart-product-card .MuiCardContent-root {
+  flex-grow: 1; /* Allows content to expand and push button down */
+}
+
+/* Styles for the button within the card */
+.cart-product-card .MuiButton-root {
+  margin: 16px; /* Equivalent to sx={{ m: 2 }} */
+}
+
+/* --- Optional: Additional Global/Utility Styles --- */
+
+/* Center text for loading/empty/error messages */
+.text-center {
+  text-align: center;
+  margin-top: 32px; /* Equivalent to sx={{ mt: 4 }} (4 * 8px = 32px) */
+}
+
+/* Specific styling for the total typography */
+.cart-total-typography {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px; /* Equivalent to sx={{ mt: 4, mb: 4 }} */
+}
